@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-<style>
-.city {
-    float: left;
-    margin: 5px;
-    padding: 15px;
-    max-width: 300px;
-    height: 300px;
-    border: 1px solid black;
-} 
-</style>  
-    <h1><p class="serif">clowns</p> </h1>
-    </head>
-    <img src="https://i.ytimg.com/vi/nDYs1d4I6AE/maxresdefault.jpg" alt="Mountain View" style="width:304px;height:228px;">
-    <h2>"clowns are terrorrising the citizens of victoria" says the Daily telegraph </h2>
+    <head>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 
+    </head>
+    <style>
+canvas {
+    border:14px solid #d3d3d3;
+    background-color: #f3f3f3;
+}
+</style>
+    <body onload="startGame()">
+    <script>
+    var cube;
+    var score;
+    var obstacles [] ;    
+    function startGame() {
+    cube = new component(30, 30, "blue", 10, 120);
+    cube.gravity = 0.05;
+    myScore = new component("30px", "Consolas", "rainbow", 280, 40, "text");
+    myGameArea.start();
+        </script>
+    </body>
 </html>
