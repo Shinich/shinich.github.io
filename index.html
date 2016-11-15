@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-<style>
-canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
-}
-</style>
-    </head>
-   
-    <body onload="startGame()">
-        
-        <script>
-    var cube;
-    var score;
-    var obstacles [] ;    
-    function startGame() {
-    cube = new component(30, 30, "blue", 10, 120);
-    cube.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "rainbow", 280, 40, "text");
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+var myObstacles = [];
+var myScore;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece.gravity = 0.05;
+    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
-        
-        var myGameArea = {
+}
+
+var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = 480;
@@ -35,8 +31,9 @@ canvas {
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
-        }
-        function component(width, height, color, x, y, type) {
+}
+
+function component(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
     this.width = width;
@@ -131,6 +128,6 @@ function accelerate(n) {
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <p>How long can you stay alive?</p>
-        </script>
-    </body>
+</body>
 </html>
+
