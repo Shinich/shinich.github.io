@@ -2,14 +2,51 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <script>
+var counter = 0;
+var incrementer = 1;
+var costAdd = 10
+var alertDisplay = 10
+var costMinus = 10
+function  startAutomaticCounter() {
+ if (counter >=costAdd){
+  incrementer++;
+ setInterval(addBurrito, 1000);
+  counter-= costMinus;
+  costAdd= costAdd *  2;
+  alertDisplay= alertDisplay * 2;
+  costMinus= costMinus * 2;
 
+} else { 
+ alert(alertDisplay + " Burritos Needed!");
+}
+}
+function addBurrito() {
+  counter= counter + incrementer;
+  document.getElementById("counter1").innerHTML = counter;
+}</script> 
 </head>
-<body>
-    <h1><font size="4" color="red">Clowns are comming!...</font><h1>
-    <img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg" alt="clowns" style="width:304px;height:228px;">
-   <iframe width="420" height="315"
+
+   
+            <body>
+                <div class="header">
+                    <h2>Hit the <strong>CLOWN</strong> </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-m-9">
+                                <div id="counter1">0</div>
+               <div align="left">
+                   clowns
+                                </div>
+                                <div class="col-6 col-m-3" >
+                                   <img onclick="addBurrito()" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg
+                                    "height="100px" width="100px">
+    <iframe width="420" height="315"
 src="https://www.youtube.com/watch?v=AfxuXGV0w4g?controls=1">
 </iframe>
-        </body
+    <h1><font size="4" color="red">Clowns are comming!...</font><h1>
+    <img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg" alt="clowns" style="width:304px;height:228px;">
+
+        </body>
 </html>
 
