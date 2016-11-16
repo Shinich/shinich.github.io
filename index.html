@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mexico Masher
-</title>
+<title>CLOWN CLICKER</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<link rel="stylesheet" type="text/css" href="css/wacker.css"/>
-
-<script>
+ <script>
 var counter = 0;
 var incrementer = 1;
 var costAdd = 10
@@ -17,45 +12,37 @@ var costMinus = 10
 function  startAutomaticCounter() {
  if (counter >=costAdd){
   incrementer++;
- setInterval(addBurrito, 1000);
+ setInterval(points, 1000);
   counter-= costMinus;
-  costAdd= costAdd *  2;
+  costAdd= costAdd *  ;
   alertDisplay= alertDisplay * 2;
   costMinus= costMinus * 2;
-
 } else { 
- alert(alertDisplay + " Burritos Needed!");
+ alert(alertDisplay + " points needed!");
 }
 }
-function addBurrito() {
+function points () {
   counter= counter + incrementer;
   document.getElementById("counter1").innerHTML = counter;
-}
-</script>
-</head>
-<body>
-<div class="header">
-  <h2> Hit the <strong>BURRITO</strong> To Get BURRITOS</h2>
-</div>
- 
- <div class="row">
-<div class="col-3 col-m-9">
- <div id="counter1">      0 
-  </div>
- <div align = "left">
-  Burritos    
-  </div>
-  </div>
+}</script> 
+</head> 
 
-  <div class="col-6 col-m-3">
-   <img onclick="addBurrito()" src= "https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px"/>
-  </div>
-
-  <div class="col-3 col-m-12">
-  <button onclick="startAutomaticCounter()"> 2 Burritos per second</button>
-  </div>
-</div>
-
- 
-   </body>
-</html> 
+   
+            <body>
+                <div class="header">
+                    <h2>Hit the <strong>CLOWN</strong>to get points! </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-m-9">
+                                <div id="counter1">0</div>
+               <div align="left">
+                   points
+                             </div>
+                                <div class="col-6 col-m-3" >
+                                   <img onclick="(Points)" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg
+                                    "height="100px" width=100px">
+                                 
+                                 
+   
+        </body>
+</html>
