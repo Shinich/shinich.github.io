@@ -17,8 +17,8 @@ function  startAutomaticCounter() {
  setInterval(points, 1000);
   counter-= costMinus;
   costAdd= costAdd *  ;
-  alertDisplay= alertDisplay * 2;
-  costMinus= costMinus * 2;
+  alertDisplay= alertDisplay +32 -3;
+  costMinus= costMinus +32 -3;
 } else { 
  alert(alertDisplay + " points needed!");
 }
@@ -37,9 +37,8 @@ function points() {
                         <div class="row">
                             <div class="col-3 col-m-9">
                                 <div id="counter1">0</div>
-               <div align="left">
-                   points
-                             </div>
+               <div align="left">points</div>
+         
                                 <div class="col-6 col-m-3" >
                                    <img onclick="points()" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg
                                    "height="100px" width="100px">
