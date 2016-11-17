@@ -22,19 +22,19 @@ border: 1px;
  
 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
     /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
+    .col-m-1 {width: 8.35%;}
+    .col-m-2 {width: 16.65%;}
     .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
+    .col-m-4 {width: 33.35%;}
+    .col-m-5 {width: 41.65%;}
     .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
+    .col-m-7 {width: 58.35%;}
+    .col-m-8 {width: 66.65%;}
     .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
+    .col-m-10 {width: 83.35%;}
+    .col-m-11 {width: 91.65%;}
     .col-m-12 {width: 100%;}
 
     
@@ -57,24 +57,24 @@ border: 1px;
 
     
 }
-@media only screen and (min-width: 768px) {
-@media only screen and (max-width: 1279px) {
+@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 1200px) {
     html { 
-background: -webkit-linear-gradient(left, rgba(172, 32, 92,7), 
-rgba(0,255,255,1)); 
+background: -webkit-linear-gradient(left, rgba(200, 50, 100,10), 
+rgba(0,300,350,20)); 
 } 
 }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
 html { 
-background: -webkit-linear-gradient(left, rgb(36, 172, 32), 
-rgb(255, 0, 4)); 
+background: -webkit-linear-gradient(left, rgb(50, 200, 50), 
+rgb(500, 20, 5)); 
 } 
 }
 
 @media only screen and (min-width: 1px) {
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
 html { 
 background: -webkit-linear-gradient(left, rgb(36, 172, 32), 
 rgb(0, 12, 255)); 
