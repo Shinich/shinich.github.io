@@ -23,12 +23,12 @@ function  startAutomaticCounter() {
 }
 }
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-var counter1 = 0;
+
 var incrementer1 = 1;
 var costAdd1 = 50
 var alertDisplay1 = 50
 var costMinus1 = 50
-function  startAutomaticCounter1() {
+function  startAutomaticcounter() {
  if (counter1 >=costAdd1){
   incrementer1++;
  setInterval(addPOINTS, 1000);
@@ -43,7 +43,7 @@ function  startAutomaticCounter1() {
 }
 function addPOINTS() {
   counter= counter + incrementer;
-  document.getElementById("counter1").innerHTML = counter;
+  document.getElementById("counter").innerHTML = counter;
 }
 </script>
 
@@ -63,10 +63,10 @@ function addPOINTS() {
    <img onclick="addPOINTS()" src= "http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg" height="150px" width="150px"/></div>
 <p>Buy to get more Points!!!!!!<p>
   <div class="col-3 col-m-12">
-  <button onclick="startAutomaticCounter()"> Spoon 0.1p persec</button>
+  <button onclick="startAutomaticCounter()"> Spoon 1p persec</button>
   </div>
 
-<button onclick="startAutomaticCounter1()"> bat 2p persec</button>
+<button onclick="startAutomaticounter()"> bat 5p persec</button>
   </div>
  
    </body>
