@@ -2,49 +2,51 @@
 <html>
 <head>
 <title>CLOWN CLICKER</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- <script>
-var points
-var startAutomaticCounter
+
+<script>
 var counter = 0;
 var incrementer = 1;
-var costAdd = 10
-var alertDisplay = 10
-var costMinus = 10
+var costAdd = 5
+var alertDisplay = 5
+var costMinus = 5
 function  startAutomaticCounter() {
  if (counter >=costAdd){
   incrementer++;
- setInterval(points, 1000);
+ setInterval(addPOINTS, 1000);
   counter-= costMinus;
-  costAdd= costAdd *  ;
-  alertDisplay= alertDisplay +32 -3;
-  costMinus= costMinus +32 -3;
+  costAdd= costAdd *  2;
+  alertDisplay= alertDisplay * 2;
+  costMinus= costMinus * 2;
+
 } else { 
- alert(alertDisplay + " points needed!");
+ alert(alertDisplay + " POINTS NEEDED!");
 }
 }
-function points() {
+function addPOINTS() {
   counter= counter + incrementer;
   document.getElementById("counter1").innerHTML = counter;
-}</script> 
-</head> 
+}
+</script>
+</head>
+<body>
+<div class="header">
+  <h2> Hit the CLOWN to get POINTS</h2>
+</div>
+ 
+ <div class="row">
+<div class="col-6 col-m-9">
+ <div id="counter1"> 0 </div>
+ <div align = "left">POINTS</div>
+  </div>
 
-   
-            <body>
-                <div class="header">
-                    <h2>Hit the <strong>CLOWN</strong>to get points! </h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 col-m-9">
-                                <div id="counter1">0</div>
-               <div align="left">points</div>
-         
-                                <div class="col-6 col-m-3" >
-                                   <img onclick="points()" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg
-                                   "height="100px" width="100px">
-                                <div class="col-3 col-m-12">
-                                 <button onclick="startAutomaticCounter()">1point per second</button>
-                                 </div>
-                             </div>
-        </body>
-</html>
+  <div class="col-7 col-m-4">
+   <img onclick="addPOINTS()" src= "http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg" height="150px" width="150px"/></div>
+
+  <div class="col-3 col-m-12">
+  <button onclick="startAutomaticCounter()"> Spoon 1persec</button>
+  </div>
+</div>
+
+ 
+   </body>
+</html> 
