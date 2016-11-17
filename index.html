@@ -1,33 +1,46 @@
+WHERE IS CHRISTMAS?!
+ESSENTIAL QUESTION
+Much of our world is lost in the commercialism of Christmas.
+Your challenge is to develop a solution to bring back the true meaning of Christmas.
+Task 2 Christmas Now and Then
+Your task is to investigate the experience of Christmas and whether or not it has changed over the years. You must then present your findings in an app of your choice. You will need to develop a set of research questions to gather your information. 
+Suggestions for gathering your information are:
+•	Develop an electronic survey
+•	Interview family member by videoing them.
+Sample research questions;
+•	How do you celebrate Christmas?
+•	Has the way you celebrate Christmas changed over time and if so, how?
+•	What is your biggest focus at Christmas time?
+•	What do you most look forward to at Christmas time?
+•	What do you find challenging at Christmas time?
+•	If you could change one thing at Christmas what would it be?
+Data from survey must be completed due Friday 18th November
+Presentation of your findings due Monday 21st November
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mexico Masher
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<link rel="stylesheet" type="text/css" href="css/wacker.css"/>
+<title>CLOWN CLICKER</title>
 
 <script>
 var counter = 0;
 var incrementer = 1;
-var costAdd = 10
-var alertDisplay = 10
-var costMinus = 10
+var costAdd = 5
+var alertDisplay = 5
+var costMinus = 5
 function  startAutomaticCounter() {
  if (counter >=costAdd){
   incrementer++;
- setInterval(addBurrito, 1000);
+ setInterval(addPOINTS, 1000);
   counter-= costMinus;
   costAdd= costAdd *  2;
   alertDisplay= alertDisplay * 2;
   costMinus= costMinus * 2;
 
 } else { 
- alert(alertDisplay + " Burritos Needed!");
+ alert(alertDisplay + " POINTS NEEDED!");
 }
 }
-function addBurrito() {
+function addPOINTS() {
   counter= counter + incrementer;
   document.getElementById("counter1").innerHTML = counter;
 }
@@ -35,27 +48,24 @@ function addBurrito() {
 </head>
 <body>
 <div class="header">
-  <h2> Hit the <strong>BURRITO</strong> To Get BURRITOS</h2>
+  <h2> Hit the CLOWN to get POINTS</h2>
 </div>
  
  <div class="row">
-<div class="col-3 col-m-9">
- <div id="counter1">      0 
-  </div>
- <div align = "left">
-  Burritos    
-  </div>
+<div class="col-6 col-m-9">
+ <div id="counter1"> 0 </div>
+ <div align = "left">POINTS</div>
   </div>
 
-  <div class="col-6 col-m-3">
-   <img onclick="addBurrito()" src= "https://www.deltaco.com/files/menu/item/classicgrilledchickenburrito.png" height="100px" width="100px"/>
-  </div>
+  <div class="col-7 col-m-4">
+   <img onclick="addPOINTS()" src= "http://i2.cdn.cnn.com/cnnnext/dam/assets/161010163010-creepy-clown-large-169.jpg" height="150px" width="150px"/></div>
 
   <div class="col-3 col-m-12">
-  <button onclick="startAutomaticCounter()"> 2 Burritos per second</button>
+  <button onclick="startAutomaticCounter()"> Spoon 1persec</button>
   </div>
 </div>
 
  
    </body>
 </html> 
+
