@@ -23,15 +23,15 @@ function  startAutomaticCounter() {
 }
 }
  ///////////////////////////////////
-
-var incrementer1 = 1;
+var counter1 =0;
+var incrementer1 = 2;
 var costAdd1 = 50
 var alertDisplay1 = 50
 var costMinus1 = 50
 function  startAutomaticcounter() {
  if (counter1 >=costAdd1){
   incrementer1++;
- setInterval(addPOINTS, 1000);
+ setInterval(addPOINTSs, 1000);
   counter1-= costMinus1;
   costAdd1= costAdd1 *  3;
   alertDisplay1= alertDisplay1 * 3;
@@ -42,7 +42,7 @@ function  startAutomaticcounter() {
 }
 }
 function addPOINTS() {
-  counter= counter + incrementer;
+  counter1= counter1 + incrementer1;
   document.getElementById("counter").innerHTML = counter;
 }
 </script>
